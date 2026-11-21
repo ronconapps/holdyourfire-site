@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hold Your Fire</title>
+<meta name="description" content="Hold Your Fire: a fast multiplayer arena game for your phone. Play offline against bots or online with friends.">
+<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+<main id="view" data-page="home">
+<h1>Hold Your Fire</h1>
+<p class="tag">A fast multiplayer arena game for your phone.</p>
+<div id="invite" hidden>
+  <div class="card">
+    <p class="label">You are invited to a room</p>
+    <p class="code" id="code"></p>
+    <button class="copy" id="copy" type="button" hidden>Copy code</button>
+  </div>
+  <p><strong>Already have the game?</strong> Tap the invitation link again on your phone and Hold Your Fire opens with this code ready. You still press JOIN.</p>
+  <p><strong>New here?</strong> Install the game below, then tap the invitation link again. Or open the game, choose PLAY ONLINE &rarr; JOIN WITH CODE and type the code.</p>
+  <p class="dim">The room may be full or already closed. The game checks that when you join; this page does not.</p>
+</div>
+<div id="badlink" class="card err" hidden><p>This invitation link is not valid. Ask your friend to share the room again from the game.</p></div>
+<div id="missing" class="card" hidden><p>This page does not exist.</p><p><a href="/">Hold Your Fire home</a></p></div>
+<a id="play" class="btn" href="#">Get it on Google Play</a>
+<a id="ios" class="btn alt" href="#">Download on the App Store</a>
+<p class="dim" id="soon">The iPhone version is coming soon.</p>
+</main>
+<script src="/site.js"></script>
+<script src="/page.js"></script>
+</body></html>
