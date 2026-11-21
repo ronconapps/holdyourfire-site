@@ -8,7 +8,9 @@ Static site for Hold Your Fire. Served by GitHub Pages from the root of the `mai
 | `/r/{ROOM_CODE}` | invitation page: GitHub Pages serves `404.html` for it, and `page.js` reads the code from the path |
 | `/.well-known/assetlinks.json` | Android App Links association |
 | `/.well-known/apple-app-site-association` | iOS Universal Links association (JSON, no extension) |
-| `/support`, `/privacy`, `/app-ads.txt` | reserved: not created yet (an unknown path shows the "page does not exist" card) |
+| `/privacy/` | the privacy policy, a verbatim copy of the one published at ronconapps.github.io/privacy (last updated 10 November 2026). The prepared v2 is NOT published: it still has two blanks only the owner can fill (effective date, legal name and address) |
+| `/support/` | contact page (email and what to include) |
+| `/app-ads.txt` | AdMob seller declaration, a verbatim copy of the one at ronconapps.github.io (publisher `pub-3686302159829912`) |
 
 `site.js` is the only file to edit for store links (`PLAY_URL`, `APP_STORE_ID`). The invitation page never claims a room exists or is open: the game checks that when the player joins.
 
