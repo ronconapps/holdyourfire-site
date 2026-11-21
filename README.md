@@ -13,7 +13,7 @@ Static site for Hold Your Fire. Served by GitHub Pages from the root of the `mai
 `site.js` is the only file to edit for store links (`PLAY_URL`, `APP_STORE_ID`). The invitation page never claims a room exists or is open: the game checks that when the player joins.
 
 ## Values still to fill in
-- `.well-known/assetlinks.json`: replace `REPLACE_WITH_GOOGLE_PLAY_APP_SIGNING_SHA256` (Play Console -> Test and release -> App integrity -> App signing -> "SHA-256 certificate fingerprint"). The upload-key fingerprint is already filled in (read from the release AAB).
+- `.well-known/assetlinks.json`: DONE. Both fingerprints are filled in: the upload key (read from the release AAB) and the Google Play app-signing key (classical key, copied from Play Console -> App signing on 2026-11-21).
 - `site.js`: `APP_STORE_ID` once the App Store listing exists; confirm `PLAY_URL` when the Play listing is public.
 - `.well-known/apple-app-site-association`: the Team ID `6CPXZ9NP66` comes from the signed App Store archive; confirm it at developer.apple.com -> Membership.
 
